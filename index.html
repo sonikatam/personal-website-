@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Sonika Tamilarasan</a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Sonika!</span>
+          </h1>
+          <p class="hero-subtitle">Software Developer</p>
+          <p class="hero-description">
+            Him Welcome to my website! I am currently a student at UIUC pursuing
+            a bachelor's degree in Computer Science & Economics. 
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/IMG_6663.png" alt="Sonika Tamilarasan" class="profile-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate developer who is looking for a full-time role in software development. When I'm not coding, you can find me
+              exploring new local restaurants, hiking, or reading.
+            </p>
+            <div class="interests">
+              <h3>My Interests</h3>
+              <div class="interest-tags">
+                <span class="interest-tag">Backend Development</span>
+                <span class="interest-tag">Frontend Development</span>
+                <span class="interest-tag">Cloud Computing</span>
+                <span class="interest-tag">Open Source</span>
+              </div>
+            </div>
+          </div>
+          <div class="skills">
+            <h3>Skills</h3>
+            <div class="skill-categories">
+              <div class="skill-category">
+                <h4>Frontend</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">CSS</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Vue.js</span>
+                  <span class="skill-tag">TypeScript</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Backend</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">Java</span>
+                  <span class="skill-tag">SQL</span>
+                  <span class="skill-tag">MongoDB</span>
+                  <span class="skill-tag">Go</span>
+                  <span class="skill-tag">C++</span>
+              </div>
+              <div class="skill-category">
+                <h4>Tools</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">AWS</span>
+                  <span class="skill-tag">Figma</span>
+                  <span class="skill-tag">VS Code</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-scroll-wrapper">
+          <div class="projects-gradient-fade"></div>
+          <div class="projects-grid horizontal-scroll" id="projectsGrid">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-code"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-description">
+                  A full-stack e-commerce solution built with React, Node.js, and
+                  MongoDB. Features include user authentication, payment
+                  processing, and admin dashboard.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Stripe</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i> Code</a
+                  >
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Task Management App</h3>
+                <p class="project-description">
+                  A cross-platform mobile app for task management with real-time
+                  synchronization, team collaboration, and progress tracking
+                  features.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Redux</span>
+                  <span class="tech-tag">Expo</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i> Code</a
+                  >
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Data Visualization Dashboard</h3>
+                <p class="project-description">
+                  An interactive dashboard for visualizing complex datasets with
+                  real-time updates, custom filters, and exportable reports.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">D3.js</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i> Code</a
+                  >
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- New Project Card -->
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-robot"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">AI Chatbot Platform</h3>
+                <p class="project-description">
+                  A conversational AI chatbot platform for customer support, built with Python, FastAPI, and React. Integrates with Slack and web chat.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">WebSockets</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i> Code</a
+                  >
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- End New Project Card -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact compact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content single-column compact">
+          <div class="contact-info centered compact">
+            <div class="contact-details centered-details compact">
+              <span class="email-tag"><i class="fas fa-envelope"></i> sonikatam0@gmail.com</span>
+              <span class="contact-item compact"><i class="fas fa-map-marker-alt"></i> San Francisco, California</span>
+              <span class="contact-item compact"><i class="fas fa-file-pdf"></i> <a href="assets/Sonika_2025_resume.pdf" target="_blank" class="resume-link">View Resume (PDF)</a></span>
+            </div>
+          </div>
+          <div class="social-links centered compact">
+            <div class="social-grid centered-social compact">
+              <a href="https://github.com/sonikatam" class="social-link github compact" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/sonikat/" class="social-link linkedin compact" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Sonika Tamilarasan. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
