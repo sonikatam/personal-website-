@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <title>Sonika Tamilarasan</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -15,7 +15,7 @@
       <header class="header">
         <div class="brand">
           <div class="name">Sonika Tamilarasan</div>
-          <div class="meta">Software Developer · CS + Econ @ UIUC</div>
+          <div class="meta">Software Engineer @ Samsara</div>
         </div>
 
         <nav class="tabs" aria-label="Sections">
@@ -46,6 +46,14 @@
           <button
             class="tab"
             type="button"
+            data-tab="reads"
+            aria-selected="false"
+          >
+            Reads
+          </button>
+          <button
+            class="tab"
+            type="button"
             data-tab="contact"
             aria-selected="false"
           >
@@ -58,10 +66,11 @@
         <!-- Home (default tab) -->
         <section id="home" class="panel" data-panel="home">
           <h1>Hi, I'm Sonika!</h1>
-          <p>Software Developer</p>
           <p>
-            Welcome to my website. I’m currently a student at UIUC pursuing a
-            bachelor's degree in Computer Science &amp; Economics.
+            Welcome to my website. I’m just graduated from the University of
+            Illinois at Urbana-Champaign with a bachelor's degree in Computer
+            Science + Economics. Currently, I'm a software engineer at Samsara,
+            where I build AI powered detections for road safety.
           </p>
         </section>
 
@@ -70,69 +79,129 @@
           <h1>projects</h1>
           <ul class="items">
             <li class="item">
-              <div class="item-title">E-Commerce Platform</div>
-              <div class="item-meta">react · node · mongodb · stripe</div>
-              <div class="item-links">
-                <a href="#" target="_blank" rel="noreferrer">code</a>
-                <span class="sep">/</span>
-                <a href="#" target="_blank" rel="noreferrer">demo</a>
-              </div>
-            </li>
-            <li class="item">
-              <div class="item-title">Task Management App</div>
+              <div class="item-title">Study Lync</div>
               <div class="item-meta">
-                react native · firebase · redux · expo
+                javascript· google maps api · gcp · sql
               </div>
               <div class="item-links">
-                <a href="#" target="_blank" rel="noreferrer">code</a>
+                <a
+                  href="https://github.com/sonikatam/StudyLync"
+                  target="_blank"
+                  rel="noreferrer"
+                  >code</a
+                >
                 <span class="sep">/</span>
-                <a href="#" target="_blank" rel="noreferrer">demo</a>
+                <a
+                  href="https://drive.google.com/file/d/1cOv8UWKT12_0L001o5YpmiY9NKso1Loa/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                  >demo</a
+                >
               </div>
             </li>
             <li class="item">
-              <div class="item-title">Data Visualization Dashboard</div>
-              <div class="item-meta">d3 · python · flask · postgres</div>
+              <div class="item-title">Chicago Crime Prediction</div>
+              <div class="item-meta">lstm · random forest · flask</div>
               <div class="item-links">
-                <a href="#" target="_blank" rel="noreferrer">code</a>
+                <a
+                  href="https://github.com/sonikatam/ChicagoCrimePrediction"
+                  target="_blank"
+                  rel="noreferrer"
+                  >code</a
+                >
                 <span class="sep">/</span>
-                <a href="#" target="_blank" rel="noreferrer">demo</a>
+                <a
+                  href="https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?params=/context/altreu_projects/article/1018/&path_info=2024_Summer_Proceedings_Teuscher_Lab_v2.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  >demo</a
+                >
               </div>
             </li>
             <li class="item">
-              <div class="item-title">AI Chatbot Platform</div>
-              <div class="item-meta">python · fastapi · react · websockets</div>
+              <div class="item-title">Search and Rescue</div>
+              <div class="item-meta">opencv · raspberry pi · python</div>
               <div class="item-links">
-                <a href="#" target="_blank" rel="noreferrer">code</a>
+                <a
+                  href="https://github.com/sonikatam/SearchAndRescueHackIllinois"
+                  target="_blank"
+                  rel="noreferrer"
+                  >code</a
+                >
                 <span class="sep">/</span>
-                <a href="#" target="_blank" rel="noreferrer">demo</a>
+                <a
+                  href="https://docs.google.com/presentation/d/1zmKpC3Wca_RJdpwPMJYOmAh6iVj9D3MwS_3IVvlMgBE/edit?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                  >demo</a
+                >
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="item-title">Bit by Bit</div>
+              <div class="item-meta">css · javascript · html · discord api</div>
+              <div class="item-links">
+                <a
+                  href="https://github.com/sonikatam/Bit-by-Bit?tab=readme-ov-file"
+                  target="_blank"
+                  rel="noreferrer"
+                  >code</a
+                >
+                <span class="sep">/</span>
+                <a
+                  href="https://bitbybittechnology.github.io/index.html"
+                  target="_blank"
+                  rel="noreferrer"
+                  >demo</a
+                >
               </div>
             </li>
           </ul>
-          <p class="hint">
-            Tip: replace the placeholder links above with your GitHub + live
-            demos.
-          </p>
         </section>
 
         <!-- Blog -->
         <section id="blog" class="panel" data-panel="blog" hidden>
           <h1>blog</h1>
-          <p class="hint">
-            Add links to posts you’re writing (Notion, Medium, Substack, your
-            own, etc.).
-          </p>
+          <p class="hint">links to my recent reflections.</p>
           <ul class="items">
             <li class="item">
               <div class="item-title">
-                <a href="#" target="_blank" rel="noreferrer">Post title #1</a>
+                <a
+                  href="https://sonikatam.hashnode.dev/introduction"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Intro to post grad
+                </a>
               </div>
-              <div class="item-meta">2026-01-01 · topic</div>
+              <div class="item-meta">
+                outlining what i want to learn and improve on - kinda my
+                personal manifesto
+              </div>
             </li>
+          </ul>
+        </section>
+
+        <!-- Reads -->
+        <section id="reads" class="panel" data-panel="reads" hidden>
+          <h1>reads</h1>
+          <p class="hint">Books I’m reading / have read.</p>
+          <ul class="items">
             <li class="item">
               <div class="item-title">
-                <a href="#" target="_blank" rel="noreferrer">Post title #2</a>
+                <a
+                  href="https://www.goodreads.com/book/show/11084145-steve-jobs"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Steve Jobs</a
+                >
               </div>
-              <div class="item-meta">2025-12-15 · topic</div>
+              <p class="item-note">
+                Currently Reading. great book so far - i would say i am an apple
+                fan (i have the whole ecosystem). interesting to read how it
+                came about and how he built it.
+              </p>
             </li>
           </ul>
         </section>

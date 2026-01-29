@@ -19,14 +19,15 @@ body {
 }
 
 body {
-  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
-    Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:
+    "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   background: var(--bg);
   color: var(--fg);
   line-height: 1.6;
   letter-spacing: 0.2px;
   text-transform: lowercase;
-  overflow: hidden; /* scroll only when needed (inside content) */
+  overflow-y: auto; /* allow page to scroll when content is tall */
 }
 
 a {
@@ -96,7 +97,7 @@ button:focus-visible {
   padding-top: 18px;
   flex: 1 1 auto;
   min-height: 0; /* allow flex child to shrink for overflow */
-  overflow: auto;
+  overflow: visible;
 }
 
 .panel {
@@ -161,6 +162,12 @@ button:focus-visible {
 }
 
 .item-links {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.item-note {
   margin-top: 8px;
   color: var(--muted);
   font-size: 0.92rem;

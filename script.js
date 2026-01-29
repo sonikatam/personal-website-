@@ -20,12 +20,12 @@ function setActiveTab(tabId) {
 function normalizeTabId(value) {
   const v = (value || "").trim().toLowerCase();
   if (!v) return "home";
-  if (["home", "projects", "blog", "contact"].includes(v)) return v;
+  if (["home", "projects", "blog", "reads", "contact"].includes(v)) return v;
   return "home";
 }
 
 function getTabFromHash() {
-  // supports #home, #projects, #blog, #contact
+  // supports #home, #projects, #blog, #reads, #contact
   const raw = window.location.hash.replace("#", "");
   return normalizeTabId(raw);
 }
@@ -37,15 +37,19 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       const tabId = normalizeTabId(btn.dataset.tab);
       setActiveTab(tabId);
-      window.location.hash = tabId;
+      // Update the URL *without* triggering the browser's anchor auto-scroll.
+      // (Setting location.hash can scroll to the element with that id.)
+      if (window.location.hash !== `#${tabId}`) {
+        history.pushState({ tabId }, "", `#${tabId}`);
+      }
     });
   });
 
   // initialize from hash if present
   setActiveTab(getTabFromHash());
 
-  // respond to manual hash changes / back button
-  window.addEventListener("hashchange", () => {
+  // respond to back/forward navigation (History API)
+  window.addEventListener("popstate", () => {
     setActiveTab(getTabFromHash());
   });
 });
